@@ -22,7 +22,7 @@ export function Hero() {
           <span className="text-primary">Sistemas de Información</span>
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto text-balance leading-relaxed">
-          Creo experiencias webs y funcionales con atención al detalle y pasión por el diseño
+          Creo experiencias webs y funcionales con atención al detalle y pasión por el diseño.
         </p>
         <button
           onClick={scrollToAbout}
