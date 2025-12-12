@@ -74,10 +74,6 @@ export function Contact() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-border text-center">
-          <p className="text-sm text-muted-foreground"> Intendente Monaldi Oriana
-          </p>
-        </div>
       </div>
     </section>
   )
