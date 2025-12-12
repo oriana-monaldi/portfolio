@@ -63,6 +63,15 @@ const projects: Project[] = [
     github: "#",
     demo: "https://estellar.vercel.app/",
   },
+  {
+  title: "Heladera Interactiva Manos Libres",
+  description:
+    "Proyecto de heladera interactiva diseñada para ofrecer una experiencia completamente manos libres, permitiendo consultar ingredientes disponibles y solicitar recetas basadas en los alimentos detectados por sensores internos. El asistente de voz guía al usuario con pasos claros, información nutricional y opciones personalizadas, brindando una gestión organizada y práctica dentro de la cocina.",
+  image: "/asistente.jpeg",
+  tags: ["IoT", "JavaScript", "React", "Asistentes de Voz", "Reconocimiento por Sensores", "UX/UI"],
+  github: "#",
+}
+
 ];
 
 export function Projects() {
