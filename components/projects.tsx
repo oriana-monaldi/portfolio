@@ -73,6 +73,7 @@ const projects: Project[] = [
       "JavaScript",
       "React",
       "Asistentes de Voz",
+      "React",
       "Reconocimiento por Sensores",
       "UX/UI",
     ],

@@ -182,7 +182,6 @@ export function Testimonials() {
                 </button>
               </div>
 
-              {/* Progress bar */}
               <div className="mt-3 h-1 bg-black/5 dark:bg-white/5 rounded-full overflow-hidden">
                 <div
                   className={`h-full ${
@@ -241,11 +240,9 @@ export function Testimonials() {
         </div>
 
         <div className="container mx-auto px-4 max-w-6xl">
-          {/* Testimonials Carousel */}
           {testimonials.length > 0 ? (
             <div className="relative overflow-hidden mb-12">
               <div className="flex animate-scroll gap-6">
-                {/* Duplicamos las reseñas para crear el efecto infinito */}
                 {[...testimonials, ...testimonials].map((testimonial, index) => (
                   <div
                     key={`${testimonial.id}-${index}`}
@@ -286,7 +283,6 @@ export function Testimonials() {
             </div>
           )}
 
-          {/* Add Review Button/Form */}
           {!showForm ? (
             <div className="text-center">
               <button
