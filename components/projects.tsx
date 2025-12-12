@@ -34,7 +34,7 @@ const projects: Project[] = [
     description:
       "Página web mobile first orientada a optimizar la organización interna del taller, incorporando perfiles diferenciados para administración y personal. Permite registrar vehículos con su información asociada y visualizar los trabajos asignados, contribuyendo a una gestión más eficiente y colaborativa de las tareas diarias dentro del servicio mecánico.",
     image: "/altagamaOrganizer.jpeg",
-    tags: ["React", "Next.js" ,"Firebase", "Tailwind CSS"],
+    tags: ["React", "Next.js", "Firebase", "Tailwind CSS"],
     github: "https://github.com/oriana-monaldi/Claudia-Estilista",
   },
   {
@@ -64,14 +64,29 @@ const projects: Project[] = [
     demo: "https://estellar.vercel.app/",
   },
   {
-  title: "Heladera Interactiva Manos Libres",
-  description:
-    "Proyecto de heladera interactiva diseñada para ofrecer una experiencia completamente manos libres, permitiendo consultar ingredientes disponibles y solicitar recetas basadas en los alimentos detectados por sensores internos. El asistente de voz guía al usuario con pasos claros, información nutricional y opciones personalizadas, brindando una gestión organizada y práctica dentro de la cocina.",
-  image: "/asistente.jpeg",
-  tags: ["IoT", "JavaScript", "React", "Asistentes de Voz", "Reconocimiento por Sensores", "UX/UI"],
-  github: "#",
-}
-
+    title: "Heladera Interactiva Manos Libres",
+    description:
+      "Proyecto de heladera interactiva diseñada para ofrecer una experiencia completamente manos libres, permitiendo consultar ingredientes disponibles y solicitar recetas basadas en los alimentos detectados por sensores internos. El asistente de voz guía al usuario con pasos claros, información nutricional y opciones personalizadas, brindando una gestión organizada y práctica dentro de la cocina.",
+    image: "/asistente.jpeg",
+    tags: [
+      "IoT",
+      "JavaScript",
+      "React",
+      "Asistentes de Voz",
+      "Reconocimiento por Sensores",
+      "UX/UI",
+    ],
+    github: "#",
+  },
+  {
+    title: "Swatch Clone",
+    description:
+      "Página web interactiva inspirada en el sitio oficial de Swatch, desarrollada íntegramente con JavaScript e incorporando un carrito de compras funcional. El proyecto replica la experiencia de navegación y selección de productos, ofreciendo un diseño dinámico y orientado a brindar una interfaz clara, moderna y de fácil uso para la experiencia de los clientes.",
+    image: "/swatch.jpeg",
+    tags: ["HTML", "CSS", "JavaScript", "DOM Manipulation"],
+    github: "#",
+    demo: "https://swatch-final-js.vercel.app/",
+  },
 ];
 
 export function Projects() {
@@ -117,7 +132,11 @@ export function Projects() {
                 {project.demo && (
                   <div className="flex gap-3">
                     <Button size="sm" asChild>
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <ExternalLink className="h-4 w-4 mr-2" />
                         Demo
                       </a>
