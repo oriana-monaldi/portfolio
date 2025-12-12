@@ -9,7 +9,7 @@ const skills = [
   },
   {
     category: "Tools & Others",
-    items: ["Git", "GitHub", "Azure", "Postman", "Linux", "Responsive Design", "Jira", "Web Accessibility", "REST APIs", "Figma",],
+    items: ["Git", "GitHub", "Azure", "Postman", "Linux", "Responsive Design", "Jira", "Web Accessibility", "REST APIs", "Figma","Docker"],
   },
   {
     category: "Database & Others",

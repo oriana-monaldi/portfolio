@@ -2,7 +2,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  github: string;
+  demo?: string;
+}
+
+const projects: Project[] = [
   {
     title: "Taller Altagama",
     description:
@@ -17,19 +26,16 @@ const projects = [
     description:
       "Página web mobile first desarrollada para uso interno de la estilista, permitiendo registrar turnos y consultas, así como gestionar altas, bajas y modificaciones según día y horario, con el objetivo de organizar la agenda de forma clara y totalmente personalizada,incorporando además funciones para el seguimiento de cada cliente y mejorar la gestión.",
     image: "/claudiaOrgizer.jpeg",
-    tags: ["React", "Firebase", "Tailwind CSS"],
+    tags: ["React", "Next.js", "Firebase", "Tailwind CSS"],
     github: "https://github.com/oriana-monaldi/Claudia-Estilista",
-    demo: "#",
   },
-
   {
     title: "Altagama Organizer",
     description:
       "Página web mobile first orientada a optimizar la organización interna del taller, incorporando perfiles diferenciados para administración y personal. Permite registrar vehículos con su información asociada y visualizar los trabajos asignados, contribuyendo a una gestión más eficiente y colaborativa de las tareas diarias dentro del servicio mecánico.",
     image: "/altagamaOrganizer.jpeg",
-    tags: ["React", "Firebase", "Tailwind CSS"],
+    tags: ["React", "Next.js" ,"Firebase", "Tailwind CSS"],
     github: "https://github.com/oriana-monaldi/Claudia-Estilista",
-    demo: "#",
   },
   {
     title: "AmbulanciaYa",
@@ -47,7 +53,6 @@ const projects = [
     image: "/hamster.jpeg",
     tags: ["React Native", "TypeScript", "Firebase", "Expo"],
     github: "#",
-    demo: "https://ambulancia-ya.vercel.app/",
   },
   {
     title: "Estelar",
@@ -100,18 +105,16 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-3">
-                  <Button size="sm" asChild>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Demo
-                    </a>
-                  </Button>
-                </div>
+                {project.demo && (
+                  <div className="flex gap-3">
+                    <Button size="sm" asChild>
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Demo
+                      </a>
+                    </Button>
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}
