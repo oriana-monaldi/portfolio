@@ -226,9 +226,10 @@ export function Testimonials() {
 
       <section
         id="testimonials"
-        className="py-20  from-background to-secondary/20"
+        className="py-24 px-6 from-background to-secondary/20"
       >
         <div className="max-w-6xl mx-auto">
+          
           <div className=" mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
               Reseña de Clientes{" "}
@@ -239,16 +240,53 @@ export function Testimonials() {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 max-w-6xl">
+        <div className="max-w-6xl mx-auto">
           {testimonials.length > 0 ? (
-            <div className="relative overflow-hidden mb-12">
-              <div className="flex animate-scroll gap-6">
-                {[...testimonials, ...testimonials].map((testimonial, index) => (
+            <>
+              {/* Desktop: marquee */}
+              <div className="hidden md:block relative overflow-hidden mb-12">
+                <div className="flex animate-scroll gap-6">
+                  {[...testimonials, ...testimonials].map((testimonial, index) => (
+                    <div
+                      key={`${testimonial.id}-${index}`}
+                      className="flex-shrink-0 w-[350px] bg-card rounded-2xl p-6 shadow-sm border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                    >
+                      <div className="flex items-center gap-1 mb-3">
+                        {[...Array(5)].map((_, i) => (
+                          <Star
+                            key={i}
+                            className={`w-4 h-4 ${
+                              i < testimonial.rating
+                                ? "fill-accent text-accent"
+                                : "text-muted-foreground/30"
+                            }`}
+                          />
+                        ))}
+                      </div>
+                      <p className="text-foreground mb-4 text-pretty leading-relaxed">
+                        "{testimonial.comment}"
+                      </p>
+                      <div className="border-t border-border/50 pt-4">
+                        <p className="font-semibold text-foreground">
+                          {testimonial.name}
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                          {testimonial.project}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Mobile: stacked, full-width cards for better readability */}
+              <div className="md:hidden mb-12 space-y-4">
+                {testimonials.map((testimonial) => (
                   <div
-                    key={`${testimonial.id}-${index}`}
-                    className="flex-shrink-0 w-[350px] bg-card rounded-2xl p-6 shadow-sm border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                    key={testimonial.id}
+                    className="w-full bg-card rounded-2xl p-6 shadow-sm border border-border"
                   >
-                    <div className="flex items-center gap-1 mb-3">
+                    <div className="flex items-center gap-2 mb-3">
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
@@ -260,7 +298,7 @@ export function Testimonials() {
                         />
                       ))}
                     </div>
-                    <p className="text-foreground mb-4 text-pretty leading-relaxed">
+                    <p className="text-foreground mb-4 text-base leading-7">
                       "{testimonial.comment}"
                     </p>
                     <div className="border-t border-border/50 pt-4">
@@ -274,7 +312,7 @@ export function Testimonials() {
                   </div>
                 ))}
               </div>
-            </div>
+            </>
           ) : (
             <div className="text-center mb-12 py-8">
               <p className="text-muted-foreground">

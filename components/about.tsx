@@ -5,16 +5,15 @@ export function About() {
       className="min-h-screen flex items-center py-24 px-6"
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-balance">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
           Sobre mí
         </h2>
 
-        <div className="space-y-6 text-muted-foreground leading-relaxed">
+        <div className="space-y-6 text-muted-foreground leading-relaxed text-justify">
           <p className="text-lg">
-            Soy estudiante de Ingeniería en Sistemas de Información en la UTN
+            Soy Ingeniería en Sistemas de Información en la UTN
             FRLP y recientemente finalicé mi Proyecto Final de carrera.
-            Actualmente me encuentro preparando los últimos dos finales para
-            recibirme.
+           
           </p>
 
           <p className="text-lg">
