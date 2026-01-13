@@ -155,7 +155,9 @@ export function Testimonials() {
                         : "text-red-900 dark:text-red-100"
                     }`}
                   >
-                    {notification.type === "success" ? "¡Gracias por tu reseña!" : "Error"}
+                    {notification.type === "success"
+                      ? "¡Gracias por tu reseña!"
+                      : "Error"}
                   </p>
                   <p
                     className={`text-sm mt-1 ${
@@ -229,7 +231,6 @@ export function Testimonials() {
         className="py-24 px-6 from-background to-secondary/20"
       >
         <div className="max-w-6xl mx-auto">
-          
           <div className=" mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
               Reseña de Clientes{" "}
@@ -246,36 +247,38 @@ export function Testimonials() {
               {/* Desktop: marquee */}
               <div className="hidden md:block relative overflow-hidden mb-12">
                 <div className="flex animate-scroll gap-6">
-                  {[...testimonials, ...testimonials].map((testimonial, index) => (
-                    <div
-                      key={`${testimonial.id}-${index}`}
-                      className="flex-shrink-0 w-[350px] bg-card rounded-2xl p-6 shadow-sm border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    >
-                      <div className="flex items-center gap-1 mb-3">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className={`w-4 h-4 ${
-                              i < testimonial.rating
-                                ? "fill-accent text-accent"
-                                : "text-muted-foreground/30"
-                            }`}
-                          />
-                        ))}
-                      </div>
-                      <p className="text-foreground mb-4 text-pretty leading-relaxed">
-                        "{testimonial.comment}"
-                      </p>
-                      <div className="border-t border-border/50 pt-4">
-                        <p className="font-semibold text-foreground">
-                          {testimonial.name}
+                  {[...testimonials, ...testimonials].map(
+                    (testimonial, index) => (
+                      <div
+                        key={`${testimonial.id}-${index}`}
+                        className="flex-shrink-0 w-[350px] bg-card rounded-2xl p-6 shadow-sm border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                      >
+                        <div className="flex items-center gap-1 mb-3">
+                          {[...Array(5)].map((_, i) => (
+                            <Star
+                              key={i}
+                              className={`w-4 h-4 ${
+                                i < testimonial.rating
+                                  ? "fill-accent text-accent"
+                                  : "text-muted-foreground/30"
+                              }`}
+                            />
+                          ))}
+                        </div>
+                        <p className="text-foreground mb-4 text-pretty leading-relaxed">
+                          "{testimonial.comment}"
                         </p>
-                        <p className="text-sm text-muted-foreground">
-                          {testimonial.project}
-                        </p>
+                        <div className="border-t border-border/50 pt-4">
+                          <p className="font-semibold text-foreground">
+                            {testimonial.name}
+                          </p>
+                          <p className="text-sm text-muted-foreground">
+                            {testimonial.project}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    )
+                  )}
                 </div>
               </div>
 

@@ -1,34 +1,61 @@
 const skills = [
   {
     category: "Languajes and Frameworks",
-    items: ["React", "React Native", "Next.js", "TypeScript", "JavaScript", "Phython", "Golang", "Kotlin", "HTML" ],
+    items: [
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Phython",
+      "Golang",
+      "Kotlin",
+      "HTML",
+    ],
   },
   {
     category: "Styling",
-    items: ["Tailwind CSS", "CSS Modules", "Sass",],
+    items: ["Tailwind CSS", "CSS Modules", "Sass"],
   },
   {
     category: "Tools & Others",
-    items: ["Git", "GitHub", "Azure", "Postman", "Linux", "Responsive Design", "Jira", "Web Accessibility", "REST APIs", "Figma","Docker"],
+    items: [
+      "Git",
+      "GitHub",
+      "Azure",
+      "Postman",
+      "Linux",
+      "Responsive Design",
+      "Jira",
+      "Web Accessibility",
+      "REST APIs",
+      "Figma",
+      "Docker",
+    ],
   },
   {
     category: "Database & Others",
-    items: ["PostgreSQL" , "MySQL", "MongoDB", "Firebase", ],
+    items: ["PostgreSQL", "MySQL", "MongoDB", "Firebase"],
   },
-]
+];
 
 export function Skills() {
   return (
     <section id="skills" className="py-24 px-6 ">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Habilidades</h2>
-        <p className="text-muted-foreground mb-12 text-lg">Tecnologías y herramientas que domino</p>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
+          Habilidades
+        </h2>
+        <p className="text-muted-foreground mb-12 text-lg">
+          Tecnologías y herramientas que domino
+        </p>
 
-        
         <div className="space-y-12">
           {skills.map((skillGroup, index) => (
             <div key={index}>
-              <h3 className="text-xl font-semibold mb-4 text-primary">{skillGroup.category}</h3>
+              <h3 className="text-xl font-semibold mb-4 text-primary">
+                {skillGroup.category}
+              </h3>
               <div className="flex flex-wrap gap-3">
                 {skillGroup.items.map((skill, skillIndex) => (
                   <div
@@ -44,5 +71,5 @@ export function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }

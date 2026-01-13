@@ -29,6 +29,23 @@ const projects: Project[] = [
     tags: ["React", "Next.js", "Firebase", "Tailwind CSS"],
     github: "https://github.com/oriana-monaldi/Claudia-Estilista",
   },
+
+ {
+  title: "ARQAP - Archivo de Registro y Catalogación Arqueológica Platense",
+  description: "Aplicación desarrollada como Proyecto Final de carrera, realizada en grupo, con enfoque mobile first para la gestión, registro y localización del patrimonio arqueológico del Museo de Ciencias Naturales de La Plata. El sistema permite organizar y localizar las piezas del Depósito 25 e incorpora un mapa interactivo para facilitar su ubicación física, siendo accesible tanto desde dispositivos móviles como desde computadoras de escritorio..",
+  image: "/ARQAP.jpeg",
+  tags: [
+    "React Native",
+    "Expo",
+    "TypeScript",
+    "Golang",
+    "Docker",
+    "Figma",
+  ],
+  github: "https://github.com/ARQAP",
+  demo: "",
+},
+
   {
     title: "Altagama Organizer",
     description:
@@ -79,15 +96,7 @@ const projects: Project[] = [
     ],
     github: "#",
   },
-  {
-    title: "Swatch Clone",
-    description:
-      "Página web interactiva inspirada en el sitio oficial de Swatch, desarrollada íntegramente con JavaScript e incorporando un carrito de compras funcional. El proyecto replica la experiencia de navegación y selección de productos, ofreciendo un diseño dinámico y orientado a brindar una interfaz clara, moderna y de fácil uso para la experiencia de los clientes.",
-    image: "/swatch.jpeg",
-    tags: ["HTML", "CSS", "JavaScript", "DOM Manipulation"],
-    github: "#",
-    demo: "https://swatch-final-js.vercel.app/",
-  },
+ 
 ];
 
 export function Projects() {
