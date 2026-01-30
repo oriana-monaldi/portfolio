@@ -63,12 +63,20 @@ const projects: Project[] = [
     github: "#",
     demo: "https://ambulancia-ya.vercel.app/",
   },
-  {
-    title: "Hamster Habbits",
+    {
+    title: "LINSI-Track",
     description:
-      "Aplicación móvil que permite gestionar hábitos diarios de forma simple e intuitiva, ofreciendo la posibilidad de registrar nuevas actividades, modificarlas o eliminarlas según la rutina del usuario. Incluye autenticación para acceso personalizado y una experiencia fluida tanto en dispositivos iOS como Android.",
-    image: "/hamster.jpeg",
-    tags: ["React Native", "TypeScript", "Firebase", "Expo"],
+    "Es una plataforma de gestión académica donde profesores pueden crear trabajos prácticos y evaluaciones para sus alumnos. Los estudiantes entregan los trabajos, reciben calificaciones y feedback. El sistema calcula automáticamente promedios combinando todas las notas, y cada alumno puede ver su progreso, calificaciones y nota final en sus materias. Tiene roles de profesor, alumno y administrador, con autenticación segura.",
+    image: "/Linsi.jpeg",
+    tags: [
+      "Golang",
+      "Gin",
+      "GORM",
+      "PostgreSQL",
+      "Docker",
+      "Dcoker Compose",
+      "Node.js"
+    ],
     github: "#",
   },
   {
@@ -79,6 +87,14 @@ const projects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript", "DOM Manipulation"],
     github: "#",
     demo: "https://estellar.vercel.app/",
+  },
+    {
+    title: "Hamster Habbits",
+    description:
+      "Aplicación móvil que permite gestionar hábitos diarios de forma simple e intuitiva, ofreciendo la posibilidad de registrar nuevas actividades, modificarlas o eliminarlas según la rutina del usuario. Incluye autenticación para acceso personalizado y una experiencia fluida tanto en dispositivos iOS como Android.",
+    image: "/hamster.jpeg",
+    tags: ["React Native", "TypeScript", "Firebase", "Expo"],
+    github: "#",
   },
   {
     title: "Heladera Interactiva Manos Libres",
