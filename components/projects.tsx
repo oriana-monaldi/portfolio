@@ -30,21 +30,15 @@ const projects: Project[] = [
     github: "https://github.com/oriana-monaldi/Claudia-Estilista",
   },
 
- {
-  title: "ARQAP - Archivo de Registro y Catalogación Arqueológica Platense",
-  description: "Aplicación desarrollada como Proyecto Final de carrera, realizada en grupo, con enfoque mobile first para la gestión, registro y localización del patrimonio arqueológico del Museo de Ciencias Naturales de La Plata. El sistema permite organizar y localizar las piezas del Depósito 25 e incorpora un mapa interactivo para facilitar su ubicación física, siendo accesible tanto desde dispositivos móviles como desde computadoras de escritorio..",
-  image: "/ARQAP.jpeg",
-  tags: [
-    "React Native",
-    "Expo",
-    "TypeScript",
-    "Golang",
-    "Docker",
-    "Figma",
-  ],
-  github: "https://github.com/ARQAP",
-  demo: "",
-},
+  {
+    title: "ARQAP - Archivo de Registro y Catalogación Arqueológica Platense",
+    description:
+      "Aplicación desarrollada como Proyecto Final de carrera, realizada en grupo, con enfoque mobile first para la gestión, registro y localización del patrimonio arqueológico del Museo de Ciencias Naturales de La Plata. El sistema permite organizar y localizar las piezas del Depósito 25 e incorpora un mapa interactivo para facilitar su ubicación física, siendo accesible tanto desde dispositivos móviles como desde computadoras de escritorio..",
+    image: "/ARQAP.jpeg",
+    tags: ["React Native", "Expo", "TypeScript", "Golang", "Docker", "Figma"],
+    github: "https://github.com/ARQAP",
+    demo: "",
+  },
 
   {
     title: "Altagama Organizer",
@@ -63,10 +57,10 @@ const projects: Project[] = [
     github: "#",
     demo: "https://ambulancia-ya.vercel.app/",
   },
-    {
+  {
     title: "LINSI-Track",
     description:
-    "Es una plataforma de gestión académica donde profesores pueden crear trabajos prácticos y evaluaciones para sus alumnos. Los estudiantes entregan los trabajos, reciben calificaciones y feedback. El sistema calcula automáticamente promedios combinando todas las notas, y cada alumno puede ver su progreso, calificaciones y nota final en sus materias. Tiene roles de profesor, alumno y administrador, con autenticación segura.",
+      "Es una plataforma de gestión académica donde profesores pueden crear trabajos prácticos y evaluaciones para sus alumnos. Los estudiantes entregan los trabajos, reciben calificaciones y feedback. El sistema calcula automáticamente promedios combinando todas las notas, y cada alumno puede ver su progreso, calificaciones y nota final en sus materias. Tiene roles de profesor, alumno y administrador, con autenticación segura.",
     image: "/Linsi.jpeg",
     tags: [
       "Golang",
@@ -75,7 +69,7 @@ const projects: Project[] = [
       "PostgreSQL",
       "Docker",
       "Dcoker Compose",
-      "Node.js"
+      "Node.js",
     ],
     github: "#",
   },
@@ -88,7 +82,7 @@ const projects: Project[] = [
     github: "#",
     demo: "https://estellar.vercel.app/",
   },
-    {
+  {
     title: "Hamster Habbits",
     description:
       "Aplicación móvil que permite gestionar hábitos diarios de forma simple e intuitiva, ofreciendo la posibilidad de registrar nuevas actividades, modificarlas o eliminarlas según la rutina del usuario. Incluye autenticación para acceso personalizado y una experiencia fluida tanto en dispositivos iOS como Android.",
@@ -112,7 +106,23 @@ const projects: Project[] = [
     ],
     github: "#",
   },
- 
+  {
+    title: "Urufarr Fences Website",
+    description:
+      "Sitio web corporativo desarrollado para Urufarr Fences, una empresa de Evansville, Indiana especializada en soluciones de cercado residencial, comercial y rural. El proyecto incluye diseño responsive, navegación bilingüe (inglés/español), optimización SEO, galería de trabajos, secciones de servicios y contacto, priorizando una experiencia moderna, rápida y enfocada en la conversión de clientes. ",
+    image: "/urufarr.png",
+    tags: [
+      "React",
+      "JavaScript",
+      "Responsive Design",
+      "SEO",
+      "UI/UX",
+      "Vite",
+      "CSS",
+    ],
+    github: "https://urufarr-fences.com/about",
+    demo: "https://urufarr-fences.com/",
+  },
 ];
 
 export function Projects() {
@@ -129,22 +139,25 @@ export function Projects() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="group overflow-hidden border-border hover:shadow-lg transition-shadow"
+              className="group overflow-hidden p-0 border-border hover:shadow-xl transition-all duration-300"
             >
-              <div className="relative overflow-hidden bg-muted aspect-[3/2]">
+              <div className="relative w-full h-[320px] overflow-hidden">
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
+
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-balance">
                   {project.title}
                 </h3>
+
                 <p className="text-muted-foreground mb-4 leading-relaxed text-justify">
                   {project.description}
                 </p>
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, tagIndex) => (
                     <span
@@ -155,6 +168,7 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
+
                 {project.demo && (
                   <div className="flex gap-3">
                     <Button size="sm" asChild>

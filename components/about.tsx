@@ -13,7 +13,7 @@ export function About() {
           <p className="text-lg">
             Soy estudiante avanzada de Ingeniería en Sistemas de Información en
             la UTN FRLP. Actualmente me encuentro en la etapa final de la carrera,
-            con los últimos tres exámenes finales pendientes, y he finalizado
+            con los últimos dos exámenes finales pendientes, y he finalizado
             recientemente mi Proyecto Final.
           </p>
 
