@@ -15,7 +15,7 @@ const projects: Project[] = [
   {
     title: "Taller Altagama",
     description:
-      "Página web informativa desarrollada para presentar los servicios del taller de manera clara y profesional, proporcionando horarios de atención, ubicación y un detalle completo de las reparaciones disponibles, con el objetivo de facilitar a los clientes el acceso a la información relevante de forma rápida y sencilla, incluyendo además recomendaciones y consejos útiles para el cuidado de los vehículos.",
+      "Sitio web informativo desarrollado para un taller mecánico, diseñado para presentar sus servicios, horarios de atención, ubicación y datos de contacto mediante una interfaz clara, moderna y fácil de navegar, facilitando el acceso a la información para los clientes.",
     image: "/desktop.png",
     tags: ["React", "Tailwind CSS"],
     github: "https://github.com/oriana-monaldi/Altagama",
@@ -24,7 +24,7 @@ const projects: Project[] = [
   {
     title: "Claudia Echavarry Estilista",
     description:
-      "Página web mobile first desarrollada para uso interno de la estilista, permitiendo registrar turnos y consultas, así como gestionar altas, bajas y modificaciones según día y horario, con el objetivo de organizar la agenda de forma clara y totalmente personalizada,incorporando además funciones para el seguimiento de cada cliente y mejorar la gestión.",
+      "Página web mobile first desarrollada para una estilista, diseñada para gestionar turnos, consultas y la agenda diaria mediante una interfaz clara, moderna y fácil de usar, permitiendo administrar clientes y organizar la información de forma eficiente.",
     image: "/claudiaOrgizer.jpeg",
     tags: ["React", "Next.js", "Firebase", "Tailwind CSS"],
     github: "https://github.com/oriana-monaldi/Claudia-Estilista",
@@ -33,7 +33,7 @@ const projects: Project[] = [
   {
     title: "ARQAP - Archivo de Registro y Catalogación Arqueológica Platense",
     description:
-      "Aplicación desarrollada como Proyecto Final de carrera, realizada en grupo, con enfoque mobile first para la gestión, registro y localización del patrimonio arqueológico del Museo de Ciencias Naturales de La Plata. El sistema permite organizar y localizar las piezas del Depósito 25 e incorpora un mapa interactivo para facilitar su ubicación física, siendo accesible tanto desde dispositivos móviles como desde computadoras de escritorio..",
+      "Aplicación web mobile first desarrollada en equipo como Proyecto Final de carrera para la gestión del patrimonio arqueológico del Museo de Ciencias Naturales de La Plata. Permite registrar, organizar y localizar piezas mediante un mapa interactivo, ofreciendo una interfaz intuitiva y accesible desde dispositivos móviles y computadoras.",
     image: "/ARQAP.jpeg",
     tags: ["React Native", "Expo", "TypeScript", "Golang", "Docker", "Figma"],
     github: "https://github.com/ARQAP",
@@ -51,7 +51,7 @@ const projects: Project[] = [
   {
     title: "AmbulanciaYa",
     description:
-      "Página web desarrollada para la gestión integral de servicios de emergencia, permitiendo solicitar asistencia médica y administrar información vinculada a pacientes, paramédicos, choferes y ambulancias. El sistema incorpora distintos perfiles de usuario para organizar las tareas y agilizar la coordinación en situaciones de urgencia, ofreciendo una administración clara y centralizada del servicio.",
+      "Sistema web desarrollado en equipo para la gestión integral de servicios de emergencia. Permite solicitar asistencia médica y administrar pacientes, paramédicos, choferes y ambulancias. Cuenta con perfiles diferenciados para optimizar la coordinación operativa y centralizar la administración del servicio.",
     image: "/ambulanciaYa.png",
     tags: ["React", "Tailwind CSS", "Golang", "PostgreSQL"],
     github: "#",
@@ -60,32 +60,24 @@ const projects: Project[] = [
   {
     title: "LINSI-Track",
     description:
-      "Es una plataforma de gestión académica donde profesores pueden crear trabajos prácticos y evaluaciones para sus alumnos. Los estudiantes entregan los trabajos, reciben calificaciones y feedback. El sistema calcula automáticamente promedios combinando todas las notas, y cada alumno puede ver su progreso, calificaciones y nota final en sus materias. Tiene roles de profesor, alumno y administrador, con autenticación segura.",
+      "Sistema web desarrollado para la gestión académica. Permite a los profesores crear trabajos prácticos y evaluaciones, mientras que los estudiantes pueden realizar entregas, consultar calificaciones y hacer un seguimiento de su rendimiento. Incorpora perfiles diferenciados para administradores, profesores y alumnos, además de autenticación segura y cálculo automático de promedios.",
     image: "/Linsi.jpeg",
-    tags: [
-      "Golang",
-      "Gin",
-      "GORM",
-      "PostgreSQL",
-      "Docker",
-      "Dcoker Compose",
-      "Node.js",
-    ],
+    tags: ["Golang", "Gin", "GORM", "PostgreSQL", "Docker", "Node.js"],
     github: "#",
   },
   {
     title: "Estelar",
     description:
-      "Página web informativa y educativa sobre el Sistema Solar que permite explorar cada planeta, visualizar una galería interactiva de imágenes y disfrutar de un juego temático del espacio. El sitio ofrece una experiencia dinámica y responsive, brindando contenido claro y accesible para usuarios de todas las edades.",
+      "Página web informativa y educativa sobre el Sistema Solar. Permite explorar los planetas, visualizar una galería interactiva de imágenes y disfrutar de un juego temático del espacio, ofreciendo una experiencia dinámica, intuitiva y adaptable a distintos dispositivos.",
     image: "/estelar.jpeg",
-    tags: ["HTML", "CSS", "JavaScript", "DOM Manipulation"],
+    tags: ["React", "CSS", "JavaScript", "DOM Manipulation"],
     github: "#",
     demo: "https://estellar.vercel.app/",
   },
   {
     title: "Hamster Habbits",
     description:
-      "Aplicación móvil que permite gestionar hábitos diarios de forma simple e intuitiva, ofreciendo la posibilidad de registrar nuevas actividades, modificarlas o eliminarlas según la rutina del usuario. Incluye autenticación para acceso personalizado y una experiencia fluida tanto en dispositivos iOS como Android.",
+      "Aplicación móvil desarrollada para la gestión de hábitos diarios. Permite crear, editar y eliminar actividades de forma sencilla, ayudando a los usuarios a organizar sus rutinas mediante una interfaz intuitiva. Incluye autenticación segura y una experiencia optimizada para dispositivos iOS y Android.",
     image: "/hamster.jpeg",
     tags: ["React Native", "TypeScript", "Firebase", "Expo"],
     github: "#",
@@ -93,35 +85,46 @@ const projects: Project[] = [
   {
     title: "Heladera Interactiva Manos Libres",
     description:
-      "Proyecto de heladera interactiva diseñada para ofrecer una experiencia completamente manos libres, permitiendo consultar ingredientes disponibles y solicitar recetas basadas en los alimentos detectados por sensores internos. El asistente de voz guía al usuario con pasos claros, información nutricional y opciones personalizadas, brindando una gestión organizada y práctica dentro de la cocina.",
+      "Proyecto de heladera inteligente desarrollado para optimizar la experiencia en la cocina mediante interacción por voz. Permite consultar los ingredientes disponibles y obtener recetas personalizadas según los alimentos detectados, incorporando información nutricional y una experiencia completamente manos libres.",
     image: "/asistente.jpeg",
     tags: [
       "IoT",
       "JavaScript",
-      "React",
       "Asistentes de Voz",
       "React",
       "Reconocimiento por Sensores",
-      "UX/UI",
     ],
     github: "#",
   },
   {
-    title: "Urufarr Fences Website",
+    title: "Urufarr Fences",
     description:
-      "Sitio web corporativo desarrollado para Urufarr Fences, una empresa de Evansville, Indiana especializada en soluciones de cercado residencial, comercial y rural. El proyecto incluye diseño responsive, navegación bilingüe (inglés/español), optimización SEO, galería de trabajos, secciones de servicios y contacto, priorizando una experiencia moderna, rápida y enfocada en la conversión de clientes. ",
+      "Sitio web corporativo desarrollado para Urufarr Fences, empresa de cercados ubicada en Evansville, Indiana. Cuenta con diseño responsive, navegación bilingüe (inglés/español), optimización SEO, galería de trabajos y secciones de servicios y contacto, brindando una experiencia rápida, moderna y enfocada en la generación de clientes potenciales.",
     image: "/urufarr.png",
     tags: [
       "React",
-      "JavaScript",
+      "TypeScript",
       "Responsive Design",
       "SEO",
       "UI/UX",
-      "Vite",
-      "CSS",
+      "Tailwind CSS",
     ],
     github: "https://urufarr-fences.com/about",
     demo: "https://urufarr-fences.com/",
+  },
+  {
+    title: "App TV",
+    description:
+      "Sistema de gestión de televisores desarrollado para administrar clientes, equipos y planes de pago desde un panel centralizado. Incorpora autenticación segura mediante Firebase Authentication, perfiles diferenciados para administradores y usuarios, control de cuotas, seguimiento del estado de los dispositivos y una interfaz optimizada para dispositivos móviles.",
+    image: "/appTv.png",
+    tags: [
+      "React",
+      "TypeScript",
+      "Firebase Authentication",
+      "Tailwind CSS",
+      "Mobile First",
+    ],
+    github: "https://urufarr-fences.com/",
   },
 ];
 
