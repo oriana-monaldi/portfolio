@@ -26,10 +26,9 @@ export function About() {
           </p>
 
           <p className="text-lg">
-            Mi principal interés profesional está orientado al desarrollo
-            frontend. Cuento con conocimientos en desarrollo frontend, backend,
-            bases de datos y aplicaciones móviles, lo que me brinda una visión
-            integral del desarrollo de software y facilita el trabajo en equipos
+            Cuento con conocimientos en desarrollo frontend, backend, bases de
+            datos y aplicaciones móviles, lo que me brinda una visión integral
+            del desarrollo de software y facilita el trabajo en equipos
             multidisciplinarios.
           </p>
 
