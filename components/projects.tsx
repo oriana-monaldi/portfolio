@@ -126,6 +126,22 @@ const projects: Project[] = [
     ],
     github: "https://urufarr-fences.com/",
   },
+  {
+    title: "Cortada Roo",
+    description:
+      "Sistema de gestión de reservas desarrollado para administrar apartamentos, huéspedes y disponibilidad desde un panel centralizado. Incluye un sitio de reservas online y un panel privado con dashboard, calendario de ocupación, alta manual de reservas, gestión completa del ciclo de cada estadía y modo vacaciones, con una interfaz optimizada para dispositivos móviles.",
+    image: "/cotadaRoo.png",
+    tags: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite",
+      "Responsive Design",
+      "Resend",
+    ],
+    demo: "https://www.temporarioscortadaro.com/",
+    github: "https://github.com/oriana-monaldi/CortadaRoo",
+  },
 ];
 
 export function Projects() {
